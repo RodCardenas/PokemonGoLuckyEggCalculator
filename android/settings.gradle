@@ -1,0 +1,7 @@
+rootProject.name = 'PokemonGoLuckyEggCalc'
+
+include ':app'
+include ':Realm'
+project(':Realm').projectDir = new File(rootProject.projectDir, '../node_modules/Realm/android')
+include ':realm'
+project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
